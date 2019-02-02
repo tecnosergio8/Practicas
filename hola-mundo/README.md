@@ -1,7 +1,7 @@
 ---
 title: ¡Hola Mundo!
 authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan}
+  - { name: Miguel Ángel Abellán, github: migueabellan }
 nivel: 1
 ---
 
