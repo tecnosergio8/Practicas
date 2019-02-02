@@ -1,15 +1,8 @@
 ---
 title: Luz intermitente
 authors:
-  - :
-    name: Miguel Ángel Abellán
-    github: migueabellan
-  - :
-    name: Otro
-    github:
-  - :
-    name: asdfsadf
-    github:
+  - name: Miguel Ángel Abellán
+  - name: Otro
 nivel: 1
 ---
 
