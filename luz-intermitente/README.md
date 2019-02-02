@@ -1,8 +1,8 @@
 ---
 title: Luz intermitente
 authors:
-	- Miguel Ángel Abellán
-	- El Cable Amarillo
+- Miguel Ángel Abellán
+- El Cable Amarillo
 nivel: 1
 ---
 
