@@ -1,8 +1,10 @@
 ---
 title: Luz intermitente
 authors:
-- Miguel Ángel Abellán
-- El Cable Amarillo
+    - name: Miguel Ángel Abellán
+    github: migueabellan
+    - name: Usuario 1
+    - name: Usuario 2
 nivel: 1
 ---
 
