@@ -1,7 +1,8 @@
 ---
 title: ¡Hola Mundo!
 authors:
-  - name: Miguel Ángel Abellán
+  - 
+    name: Miguel Ángel Abellán
     github: migueabellan
 nivel: 1
 ---
