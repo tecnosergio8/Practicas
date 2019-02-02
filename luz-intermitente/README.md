@@ -1,15 +1,12 @@
 ---
 title: Luz intermitente
 authors:
-  - 
-    name: Miguel Ángel Abellán
-    github: migueabellan
-  - 
-    name: Otro usuario
-    github:
-  - 
-    name: Otro
-    github:
+  - - name: Miguel Ángel Abellán
+    - github: migueabellan
+  - - name: Otro usuario
+    - github:
+  - - name: Otro
+    - github:
 nivel: 1
 ---
 
