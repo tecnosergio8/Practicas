@@ -3,8 +3,6 @@ title: ¡Hola Mundo!
 authors:
   - name: Miguel Ángel Abellán
     github: migueabellan
-  - name: El Cable Amarillo
-    github: elcableamarillo
 nivel: 1
 ---
 
