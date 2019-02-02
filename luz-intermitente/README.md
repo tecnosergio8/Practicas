@@ -6,7 +6,8 @@ authors:
     github: migueabellan
   - 
     name: Otro usuario
-    github: 
+  - 
+    name: Otro 
 nivel: 1
 ---
 
