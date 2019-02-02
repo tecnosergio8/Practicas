@@ -1,7 +1,7 @@
 ---
 title: ¡Hola Mundo!
 authors:
-	- 'Miguel Ángel Abellán'
+- Miguel Ángel Abellán
 nivel: 1
 ---
 
