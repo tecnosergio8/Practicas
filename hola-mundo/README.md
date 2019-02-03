@@ -9,7 +9,7 @@ nivel: 1
 
 En este práctica se va a programar el código encargado de encender y apagar el led situado junto el pin número 13 de nuestra placa de Arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
 
-![](hola-mundo/practica.gif)
+![](practica.gif)
 
 ## Materiales
 
