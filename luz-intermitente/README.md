@@ -1,8 +1,10 @@
 ---
-title: Luz intermitente
+title: ¡Hola Mundo!
+description: Parpadeo intermitente de un led con frecuencia de 1 segundo en la placa Arduino UNO.
+tags: mblock, arduino, secundaria
+level: Iniciación
 authors:
   - { name: Miguel Ángel Abellán, github: migueabellan }
-nivel: Iniciación
 ---
 
 # Luz intermitente
