@@ -1,6 +1,7 @@
 ---
 title: ¡Hola Mundo!
 description: Primer programa o sketch que hace parpadear el led integrado que lleva la placa Arduino UNO.
+tags: mblock, arduino, secundaria
 nivel: Iniciación
 authors:
   - { name: Miguel Ángel Abellán, github: migueabellan }
