@@ -1,5 +1,5 @@
 ---
-title: ¡Hola Mundo!
+title: Luz intermitente
 description: Parpadeo intermitente de un led con frecuencia de 1 segundo en la placa Arduino UNO.
 tags: mblock, arduino, secundaria
 level: Iniciación
