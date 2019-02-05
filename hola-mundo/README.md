@@ -5,7 +5,6 @@ tags: mblock, arduino, secundaria
 level: Iniciación
 authors:
   - { name: Miguel Ángel Abellán, github: migueabellan }
-  - { name: El Cable Amarillo, github: elcableamarillo }
 ---
 
 # Hola Mundo
