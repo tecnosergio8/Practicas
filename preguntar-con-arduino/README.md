@@ -4,7 +4,7 @@ description: Programa de preguntas respuestas utilizando mBlock y Arduino UNO.
 tags: mblock, arduino, secundaria
 level: Iniciación
 authors:
-  - { Ana Isabel Villena Mota, github: }
+  - { name: Ana Isabel Villena Mota, github: }
 ---
 
 # Preguntar con arduino
