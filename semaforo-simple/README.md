@@ -2,7 +2,7 @@
 title: Semáforo simple
 description: Práctica que controla los tiempos de un semáforo con Arduino UNO.
 tags: mblock, arduino, secundaria
-level: Medio
+level: Iniciación
 authors:
   - { name: Miguel Ángel Abellán, github: migueabellan }
 ---

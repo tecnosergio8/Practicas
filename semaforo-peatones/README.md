@@ -2,7 +2,7 @@
 title: Semáforo de peatones
 description: Práctica que controla los tiempos de un semáforo para peatones.
 tags: mblock, arduino, secundaria
-level: Medio
+level: Iniciación
 authors:
   - { name: Miguel Ángel Abellán, github: migueabellan }
 ---
