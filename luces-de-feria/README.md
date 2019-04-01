@@ -2,7 +2,7 @@
 title: Luces de feria
 description: Efectos de encendido de nueve LEDs utilizando las salidas Arduino UNO.
 tags: mblock, arduino, secundaria
-level: MEdio
+level: Medio
 authors:
   - { name: Alfredo Velázquez Marín, github:  }
 ---
