@@ -4,7 +4,7 @@ description: Efectos de encendido de nueve LEDs utilizando las salidas Arduino U
 tags: mblock, arduino, secundaria
 level: MEdio
 authors:
-  - { name: Alfredo Velázquez Marín, github: migueabellan }
+  - { name: Alfredo Velázquez Marín, github:  }
 ---
 
 # Luces de feria
