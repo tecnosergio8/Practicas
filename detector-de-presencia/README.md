@@ -9,7 +9,7 @@ authors:
 ---
 
 
-# Robot detector de alumnos
+# Robot detecta alumnos
 
 El robot, siempre avanzando en línea recta y con la verde encendida, es capaz de detectar objetos, parados o en movimiento, si se encuentran a menos de 60 cm.
 
