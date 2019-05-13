@@ -11,7 +11,10 @@ authors:
 
 Basándome en una simple idea surgida cuando estaba descubriendo las posibilidades de la placa Micro:bit. Se me ocurrió poder implementar sobre ella un pequeño juego que fuese atractivo y motivador para los chavales, sería utilizado para dar un paso de gigante en el desarrollo de sus habilidades en programación, la introducción de los beneficios de trabajar con procedimientos y funciones. 
 
-Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades y no solo con el juego en si, es solo una excusa, sino que lo que estamos desarrollando es sus hablidades en la programación. Hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
+Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades y no solo con el juego en si, es solo una excusa, sino que lo que estamos desarrollando son sus hablidades en programación. Además, hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
+
+Empecemos con el primer prototipo, una pelotita que se mantiene en la fila central y que utilizando el acelerómetro del eje x hay que mantener en el centro.
+
 
 
 
