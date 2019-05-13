@@ -1,10 +1,10 @@
 ---
 title: Juego Pelotita
-description: Desarrollando la programación, procedimientos y funciones. Práctica: uso de los acelerometros en la placa Micro:bit.
-tags: etiquetas
-level: Facil, Medio, Avanzado
+description: Desarrollando la programación, procedimientos y funciones. Práctica: uso de los acelerómetros en la placa Micro:bit.
+tags: Micro:bit, microbit, juego, pelotita, pelota, acelerómetro
+level: Medio
 authors:
-  - { name: Nombre del autor, github: username }
+  - { name: Rafael Rubio Baeza, github: rafael-rubio }
 ---
 
 # Título de la práctica
