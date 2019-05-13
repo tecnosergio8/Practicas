@@ -1,6 +1,6 @@
 ---
-title: Título de la práctica
-description: Descripción de máximo 140 caracteres
+title: Juego Pelotita
+description: Desarrollando la programación, procedimientos y funciones. Práctica: uso de los acelerometros en la placa Micro:bit.
 tags: etiquetas
 level: Facil, Medio, Avanzado
 authors:
