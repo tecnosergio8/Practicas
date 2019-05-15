@@ -4,7 +4,7 @@ description: Desarrollando la programación. Uso de procedimientos y funciones. 
 tags: Micro:bit, microbit, juego, pelotita, pelota, acelerómetro
 level: Medio, Avanzado
 authors:
-  - { name: Rafael Rubio Baeza, github: rafael-rubio }
+  - { name: Rafael Rubio Baeza, github:  }
 ---
 
 
