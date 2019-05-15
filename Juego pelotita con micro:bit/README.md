@@ -7,6 +7,8 @@ authors:
   - { name: Rafael Rubio Baeza, github: rafael-rubio }
 ---
 
+
+
 # Juego de la pelotita
 
 Basándome en una simple idea surgida cuando estaba descubriendo las posibilidades de la placa Micro:bit. Se me ocurrió poder implementar sobre ella un pequeño juego que fuese atractivo y motivador para los chavales, sería utilizado para dar un paso de gigante en el desarrollo de sus habilidades en programación, la introducción de los beneficios de trabajar con procedimientos y funciones. 
