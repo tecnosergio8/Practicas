@@ -45,7 +45,7 @@ Fórmulas
 
 ## Programación
 
-Empecemos con el primer prototipo, una pelotita que se mantiene en la fila central y que utilizando el acelerómetro del eje x hay que mantener en el centro.
+Empecemos con el primer juego, una pelotita que hay que mantener en la fila central sin que se salga por los laterales utilizando el acelerómetro del eje x para que se mantenga en las posiciones centrales.
 
 ```python
 # Programa en python
