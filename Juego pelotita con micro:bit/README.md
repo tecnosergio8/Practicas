@@ -1,6 +1,6 @@
 ---
 title: Juego Pelotita
-description: Desarrollando la programación.
+description: Desarrollando la programación. Uso de procedimientos y funciones. Práctica: uso de los acelerómetros en la placa Microbit.
 tags: Micro:bit, microbit, juego, pelotita, pelota, acelerometro
 level: Medio, Avanzado
 authors:
