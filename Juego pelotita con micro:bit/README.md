@@ -1,11 +1,20 @@
 ---
+title: Cubo de LEDs 2x2x2
+description: Cubo de 8 LEDs utilizando transistores para simular diferentes efectos de luces.
+tags: mblock, arduino, secundaria
+level: Avanzado
+authors:
+  - { name: Miguel Ángel Abellán, github: migueabellan }
+---
+
+
 title: Juego Pelotita
 description: Desarrollando la programación. Uso de procedimientos y funciones. Práctica: uso de los acelerómetros en la placa Micro:bit.
 tags: Micro:bit, microbit, juego, pelotita, pelota, acelerómetro
 level: Medio
 authors:
   - { name: Rafael Rubio Baeza, github: rafael-rubio }
----
+
 
 
 
