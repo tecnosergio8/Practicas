@@ -24,7 +24,8 @@ Empecemos con el primer prototipo, una pelotita que se mantiene en la fila centr
 ## Materiales
 
 - 1 Raspberry Pi
-- 1 Cable
+- 1 Cable USB - microUSB
+- 1 Micro:bit
 
 ## Esquema eléctrico
 
@@ -41,10 +42,36 @@ Fórmulas
 
 ## Programación
 
-Descripción interesante sobre la programación
+Empecemos con el primer prototipo, una pelotita que se mantiene en la fila central y que utilizando el acelerómetro del eje x hay que mantener en el centro.
 
 ```python
 # Programa en python
+from microbit import *
+posicion=('10000','01000',"00100","00010","00001") # Array con las distintas posiciones en las que puede estar la pelotita.
+
+bola_x=2 # Posición donde comienza la pelotita
+while True:
+    reading = accelerometer.get_x()
+    
+    if reading > 20:
+        if bola_x ==4:
+            display.show(Image.SAD) # Nos hemos salido del tablero de juego por la derecha
+            sleep(1000)
+            bola_x = 4
+        else:
+            bola_x += 1
+            display.show(Image("00000:00000:"+posicion[bola_x] + ":00000:00000"))
+            sleep(500)
+            
+    if reading < -20:
+        if bola_x ==0:
+            display.show(Image.SAD) # Nos hemos salido del tablero de juego por la izquierda
+            sleep(1000)
+            bola_x=0
+        else:
+            bola_x -= 1
+            display.show(Image("00000:00000:"+posicion[bola_x] + ":00000:00000"))
+            sleep(500)
 ```
 
 ```arduino
