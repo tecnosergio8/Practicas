@@ -1,6 +1,6 @@
 ---
 title: Juego Pelotita
-description: 
+description: Desarrollando la programación.
 tags: Micro:bit, microbit, juego, pelotita, pelota, acelerometro
 level: Medio, Avanzado
 authors:
