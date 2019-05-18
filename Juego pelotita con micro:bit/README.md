@@ -8,7 +8,7 @@ authors:
 ---
 
 
-
+![](habilidad_reto.gif)  
 
 # Juego de habilidad
 
@@ -259,11 +259,14 @@ while True:
   
   Se ha utilizado una __función__: mostrar(x,y) y un __procedimiento__: fuera(), lo que hace q  ue el programa sea más sencillo de interpretar y de entender.
   
-  Llegamos así a la versión final, en la que me pareció que sería un juego más motivador si le incorporaba un reto, definir al comienzo del juego una puerta de salida entre los 16 leds que forman el exterior. Si logramos salir por esa _puerta de escape_ se mostrará una cara sonriente y si nos salimos por otra, la clásica ya cara triste.
+  Llegamos así a la versión final, me pareció que sería un juego más motivador si le incorporaba un reto. Definir al comienzo del juego una puerta de salida entre los 16 leds que forman el exterior. Si logramos salir por esa _puerta de escape_ se mostrará una cara sonriente y si nos salimos por otra, la clásica cara triste.
+
+Quedando el juego así:
+
+![](habilidad_reto.gif)  
   
-  Quedando el juego así:
   
-  El progrma lo podéis descargar copiando el siguiente código:
+El progrma lo podéis obtener copiando el siguiente código:
   
   ```
   # Programa en python
@@ -365,7 +368,7 @@ while True:
             bola_x -= 1
             mostrar(bola_x,bola_y)
   ```
-En este programa merece la pena discutir que es lo que hace la función __empezar()__ y como se consigue tras obtener un número aleatorio entre 0 y 15 conseguir asignarle un led de escape, insistiría en el condicional con las divisiones enteras (//)s restos de la división (%)
+En este programa merece la pena estudiar la función __empezar()__ y como se consigue tras obtener un número aleatorio entre 0 y 15 asignarle un led de escape, sería interesante repasar las operaciones: divisiones enteras (//) y los restos de una división (%).
 
 ```
 if salida < 5:
