@@ -80,7 +80,93 @@ El juego quedaría así:
 
 ![](habilidad_lineal.gif)
 
+El siguiente paso parece evidente, extenderlo a todos los leds y trabajar en dos dimensiones, aquí surgen al gunos pequeños problemas que hay que resolver pero con un poco de esfuerzo nada es imposible.
+
+```
+# Programa en python
+from microbit import *
+posicion=('50000','05000',"00500","00050","00005")
+
+# Posiciones iniciales de la pelotita
+bola_x=2
+bola_y=2
+
+sensibilidad = 20 # Disminuir el número para aumentar la sensibilidad
+dificultad = 200 # Poner un número más pequeño para aumentar la dificultad del juego
+
+
+while True:
+    read_x = accelerometer.get_x()
+    read_y = accelerometer.get_y()
+    if read_y > sensibilidad:
+        if bola_y == 4:
+            display.show(Image.SAD)
+            sleep(1000)
+            bola_y = 4
+        else:
+            bola_y += 1
+            cadena=''
+            for i in range(5):
+                if i != bola_y:
+                    cadena += '00000:'
+                else:
+                    cadena = cadena + posicion[bola_x] + ':'
+            cadena = cadena[:29]
+            display.show(Image(cadena))
+            sleep(dificultad)
+
+    if read_y < -1 * sensibilidad:
+        if bola_y == 0:
+            display.show(Image.SAD)
+            sleep(1000)
+            bola_y = 0
+        else:
+            bola_y -= 1
+            cadena=''
+            for i in range(5):
+                if i != bola_y:
+                    cadena += '00000:'
+                else:
+                    cadena = cadena + posicion[bola_x] + ':'
+            cadena = cadena[:29]
+            display.show(Image(cadena))
+            sleep(dificultad)
 
 
 
-![](mblock.png)
+    if read_x > sensibilidad:
+        if bola_x ==4:
+            display.show(Image.SAD)
+            sleep(1000)
+            bola_x = 4
+        else:
+            bola_x += 1
+            cadena=''
+            for i in range(5):
+                if i != bola_y:
+                    cadena += '00000:'
+                else:
+                    cadena = cadena + posicion[bola_x] + ':'
+            cadena = cadena[:29]
+            display.show(Image(cadena))
+            sleep(dificultad)
+    if read_x < -1*sensibilidad:
+        if bola_x ==0:
+            display.show(Image.SAD)
+            sleep(1000)
+            bola_x=0
+        else:
+            bola_x -= 1
+            cadena=''
+            for i in range(5):
+                if i != bola_y:
+                    cadena += '00000:'
+                else:
+                    cadena = cadena + posicion[bola_x] + ':'
+            cadena = cadena[:29]
+            display.show(Image(cadena))
+            sleep(dificultad)
+
+```
+
+![](habilidad_plano.gif)
