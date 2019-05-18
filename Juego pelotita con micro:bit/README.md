@@ -77,6 +77,7 @@ while True:
             sleep(500)
 ```
 El juego quedaría así:
+
 ![](habilidad_lineal.gif)
 
 
