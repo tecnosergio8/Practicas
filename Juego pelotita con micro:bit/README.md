@@ -1,7 +1,7 @@
 ---
-title: Juego Pelotita
+title: Juego de habilidad
 description: Avanzando en la programación. Uso de procedimientos y funciones. Práctica con los acelerómetros en la placa Micro:bit.
-tags: Micro:bit, microbit, juego, pelotita, pelota, acelerometro
+tags: Micro:bit, microbit, juego, pelotita, pelota, acelerometro, habilidad
 level: Medio, Avanzado
 authors:
   - { name: Rafael Rubio Baeza, github: rafael-rubio }
@@ -10,13 +10,13 @@ authors:
 
 
 
-# Juego de la pelotita
+# Juego de habilidad
 
 Basándome en una simple idea surgida cuando estaba descubriendo las posibilidades de la placa Micro:bit. Se me ocurrió poder implementar sobre ella un pequeño juego que fuese atractivo y motivador para los chavales, sería utilizado para dar un paso de gigante en el desarrollo de sus habilidades en programación, la introducción de los beneficios de trabajar con procedimientos y funciones. 
 
-Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades y no solo con el juego en si, es solo una excusa, sino que lo que estamos desarrollando son sus hablidades en programación. Además, hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
+Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades. El juego es solo una excusa, ya que lo que estamos en el fondo persiguiendo es desarrollar sus hablidades en programación. Aparte de las disciplinas básicas, hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
 
-Empecemos con el primer prototipo, una pelotita que se mantiene en la fila central y que utilizando el acelerómetro del eje x hay que mantener en el centro.
+
 
 
 
@@ -76,9 +76,10 @@ while True:
             display.show(Image("00000:00000:"+posicion[bola_x] + ":00000:00000"))
             sleep(500)
 ```
+El juego quedaría así:
+![](habilidad_lineal.gif)
 
-```arduino
-// Programa en arduino
-```
+
+
 
 ![](mblock.png)
