@@ -170,3 +170,91 @@ while True:
 ```
 
 ![](habilidad_plano.gif)
+
+Este es el punto donde se puede hacer enfasis entre los alumnos para que se den cuenta que el programa tiene trozos que se repiten en varias partes del código, justo lo que necesitamos para reforzar la idea de _procedimiento_ y de _función_.
+El codigo utilizando funciones y procedimientos queda:
+  ```
+  # Programa en python
+  # Escribe tu código aquí :-)
+from microbit import *
+
+
+
+posicion=('90000','09000',"00900","00090","00009")
+
+
+
+sensibilidad = 20 # Sensibilidad del juego
+dificultad = 200
+
+
+def mostrar(x,y): # Presenta en el display la bolita
+    cadena=''
+    for i in range(5):
+        if i != y:
+            cadena += '00000:'
+        else:
+            cadena = cadena + posicion[bola_x] + ':'
+        cadena = cadena[:29]
+    display.show(Image(cadena))
+    sleep(dificultad)
+
+
+def fuera():  # El jugador ha fallado
+    display.show(Image.SAD)
+    sleep(1000)
+
+
+# Principio del programa
+
+
+
+# Posiciones iniciales de la pelotita
+bola_x=2
+bola_y=2
+
+
+
+
+
+
+
+while True:
+    read_x = accelerometer.get_x()
+    read_y = accelerometer.get_y()
+    if read_y > sensibilidad:
+        if bola_y == 4:
+            fuera()
+            bola_y = 4
+        else:
+            bola_y += 1
+            mostrar(bola_x,bola_y)
+
+    if read_y < -1 * sensibilidad:
+        if bola_y == 0:
+            fuera()
+            bola_y = 0
+        else:
+            bola_y -= 1
+            mostrar(bola_x,bola_y)
+
+
+    if read_x > sensibilidad:
+        if bola_x ==4:
+            fuera()
+            bola_x = 4
+        else:
+            bola_x += 1
+            mostrar(bola_x,bola_y)
+
+    if read_x < -1*sensibilidad:
+        if bola_x ==0:
+            fuera()
+            bola_x=0
+        else:
+            bola_x -= 1
+            mostrar(bola_x,bola_y)
+  
+  ```
+  
+  Se ha utilizado una función: 
