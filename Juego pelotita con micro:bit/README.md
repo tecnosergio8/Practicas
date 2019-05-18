@@ -50,7 +50,7 @@ Empecemos con el primer juego, una pelotita que hay que mantener en la fila cent
 ```python
 # Programa en python
 from microbit import *
-posicion=('10000','01000',"00100","00010","00001") # Array con las distintas posiciones en las que puede estar la pelotita.
+posicion=('50000','05000',"00500","00050","00005") # Array con las distintas posiciones en las que puede estar la pelotita.
 
 bola_x=2 # Posición donde comienza la pelotita
 while True:
