@@ -17,13 +17,6 @@ Basándome en una simple idea surgida cuando estaba descubriendo las posibilidad
 Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades. El juego es solo una excusa, ya que lo que estamos en el fondo persiguiendo es desarrollar sus hablidades en programación. Aparte de las disciplinas básicas, hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
 
 
-
-
-
-
-
-![](practica.gif)
-
 ## Materiales
 
 - 1 Raspberry Pi
