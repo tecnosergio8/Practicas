@@ -30,18 +30,6 @@ Así surge esta idea. Es un juego en el que utilizando los acelerómetros que po
 - 1 Cable USB - microUSB
 - 1 Micro:bit
 
-## Esquema eléctrico
-
-Descripción y fórmulas del esquema eléctrico si las hubiese
-
-```
-V = 5V - 2.1V = 2.9V
-I = 20mA
-
-Fórmulas
-```
-
-![](fritzing.png)
 
 ## Programación
 
