@@ -201,12 +201,6 @@ def fuera():  # El jugador ha fallado
 bola_x=2
 bola_y=2
 
-
-
-
-
-
-
 while True:
     read_x = accelerometer.get_x()
     read_y = accelerometer.get_y()
