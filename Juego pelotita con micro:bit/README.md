@@ -257,4 +257,127 @@ while True:
   
   ```
   
-  Se ha utilizado una función: 
+  Se ha utilizado una __función__: mostrar(x,y) y un __procedimiento__: fuera(), lo que hace q  ue el programa sea más sencillo de interpretar y de entender.
+  
+  Llegamos así a la versión final, en la que me pareció que sería un juego más motivador si le incorporaba un reto, definir al comienzo del juego una puerta de salida entre los 16 leds que forman el exterior. Si logramos salir por esa _puerta de escape_ se mostrará una cara sonriente y si nos salimos por otra, la clásica ya cara triste.
+  
+  Quedando el juego así:
+  
+  El progrma lo podéis descargar copiando el siguiente código:
+  
+  ```
+  # Programa en python
+  # Escribe tu código aquí :-)
+from microbit import *
+from random import randrange
+
+
+posicion=('90000','09000',"00900","00090","00009")
+
+
+
+sensibilidad = 20 # Sensibilidad del juego
+dificultad = 200
+
+
+def mostrar(x,y): # Presenta en el display la bolita
+    cadena=''
+    for i in range(5):
+        if i != y:
+            cadena += '00000:'
+        else:
+            cadena = cadena + posicion[x] + ':'
+        cadena = cadena[:29]
+    display.show(Image(cadena))
+    sleep(dificultad)
+
+
+def fuera(out_x,out_y,x,y):  # El jugador ha fallado
+
+    if x == out_x and y == out_y: # Comprueba si la bola ha salido por el sitio correcto
+        display.show(Image.SMILE)
+        sleep(1000)
+        out_x, out_y = empezar()
+        x=2
+        y=2
+        mostrar(x,y)
+        sleep(1000)
+
+    else:
+        display.show(Image.SAD)
+        sleep(1000)
+    return out_x,out_y, x, y
+
+def empezar():  # Establece la casilla de escape
+    salida = randrange(0,16)
+    if salida < 5:
+        out_x = salida
+        out_y = 0
+    elif salida > 10:
+        out_x= salida - 11
+        out_y = 4
+    elif salida%2 == 0:
+        out_x = 4
+        out_y = ((salida-5)//2)+1
+    else:
+        out_x=0
+        out_y = ((salida-5)//2)+1
+    mostrar(out_x,out_y)
+    sleep(1000)
+    return out_x, out_y
+
+# Principio del programa
+
+salida_x, salida_y = empezar()
+# Posiciones iniciales de la pelotita
+bola_x=2
+bola_y=2
+
+while True:
+    read_x = accelerometer.get_x()
+    read_y = accelerometer.get_y()
+    if read_y > sensibilidad:
+        if bola_y == 4:
+            salida_x, salida_y, bola_x,bola_y = fuera(salida_x,salida_y,bola_x,bola_y)
+        else:
+            bola_y += 1
+            mostrar(bola_x,bola_y)
+
+    if read_y < -1 * sensibilidad:
+        if bola_y == 0:
+            salida_x, salida_y, bola_x,bola_y = fuera(salida_x,salida_y,bola_x,bola_y)
+        else:
+            bola_y -= 1
+            mostrar(bola_x,bola_y)
+
+
+    if read_x > sensibilidad:
+        if bola_x ==4:
+            salida_x, salida_y, bola_x,bola_y = fuera(salida_x,salida_y,bola_x,bola_y)
+        else:
+            bola_x += 1
+            mostrar(bola_x,bola_y)
+
+    if read_x < -1*sensibilidad:
+        if bola_x ==0:
+            salida_x, salida_y, bola_x,bola_y = fuera(salida_x,salida_y,bola_x,bola_y)
+        else:
+            bola_x -= 1
+            mostrar(bola_x,bola_y)
+  ```
+En este programa merece la pena discutir que es lo que hace la función __empezar()__ y como se consigue tras obtener un número aleatorio entre 0 y 15 conseguir asignarle un led de escape, insistiría en el condicional con las divisiones enteras (//)s restos de la división (%)
+
+```
+if salida < 5:
+        out_x = salida
+        out_y = 0
+    elif salida > 10:
+        out_x= salida - 11
+        out_y = 4
+    elif salida%2 == 0: # % - Resto de la división
+        out_x = 4
+        out_y = ((salida-5)//2)+1   # // - División entera
+    else:
+        out_x=0
+        out_y = ((salida-5)//2)+1
+```
