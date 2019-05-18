@@ -273,7 +273,7 @@ def mostrar(x,y): # Presenta en el display la bolita
 def fuera(out_x,out_y,x,y):  # El jugador ha fallado
 
     if x == out_x and y == out_y: # Comprueba si la bola ha salido por el sitio correcto
-        display.show(Image.SMILE)
+        display.show(Image.HAPPY)
         sleep(1000)
         out_x, out_y = empezar()
         x=2
