@@ -30,4 +30,11 @@ Cuando el pin de Entrada/Salida, donde hemos conectado el LED, se reconfigura pa
 
 Este programa muestra el nivel de luz con un gráfico de barras en la pantalla LED de la micro:bit. Si mueves la placa a diferentes lugares con diferentes niveles de luz, el gráfico de barras cambiará.
 
+El enlace desde donde podemos cargar el programa de aplicacion en la placa micro:bit es https://makecode.microbit.org/#editor
+
+![](programaBloque.png)
+
+## VIDEO DEMO
+En esta demostración podemos observar como al mover la mano sobre los diodos LED limitamos la cantidad de luz ambiente que indide sobre ellos. A su vez, el parpadeo de los LEDs solo el visible en el video, y no en la realidad, lo que demuestra que los pines se reconfiguran como entrada o salida de forma continuada, lo que permite medir la cantidad de luz incidente.
+
 ![](programaBloque.png)
