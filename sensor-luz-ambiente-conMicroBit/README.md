@@ -40,6 +40,7 @@ En esta demostración podemos observar como al mover la mano sobre los diodos LE
 ![](demo.gif)
 
 Este es el enlace para descargar el clip de video original.
+
 https://github.com/jviHub/Practicas/raw/patch-1/sensor-luz-ambiente-conMicroBit/IMG_0327.TRIM.MOV
 
 
