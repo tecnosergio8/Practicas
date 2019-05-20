@@ -26,29 +26,8 @@ Cuando el pin de Entrada/Salida, donde hemos conectado el LED, se reconfigura pa
 - 1 Módulo micro:bit
 - 1 Cable micro USB
 
-## Esquema eléctrico
-
-Descripción y fórmulas del esquema eléctrico si las hubiese
-
-```
-V = 5V - 2.1V = 2.9V
-I = 20mA
-
-Fórmulas
-```
-
-![](fritzing.png)
-
 ## Programación
 
-Descripción interesante sobre la programación
-
-```python
-# Programa en python
-```
-
-```arduino
-// Programa en arduino
-```
+Este programa muestra el nivel de luz con un gráfico de barras en la pantalla LED de la micro:bit. Si mueves la placa a diferentes lugares con diferentes niveles de luz, el gráfico de barras cambiará.
 
 ![](mblock.png)
