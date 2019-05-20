@@ -17,7 +17,7 @@ Bajo condiciones de polarización inversa, un diodo LED se modela como un capaci
 
 
 
-![](practica.gif)
+![](modeloFotodiodo.png)
 
 ## Materiales
 
