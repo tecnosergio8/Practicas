@@ -7,7 +7,7 @@ authors:
   - { name: Javier Solana Campoy, github: jviHub }
 ---
 
-# Título de la práctica
+# Sensor de luz ambiente con micro:bit
 
 Descripción de la práctica
 
@@ -15,8 +15,8 @@ Descripción de la práctica
 
 ## Materiales
 
-- 1 Raspberry Pi
-- 1 Cable
+- 1 Módulo micro:bit
+- 1 Cable micro USB
 
 ## Esquema eléctrico
 
