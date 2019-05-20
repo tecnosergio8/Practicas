@@ -13,7 +13,7 @@ Aunque la placa BBC micro:bit no tiene instalado un dispositivo especial como se
 
 Los LEDs son unos de los componentes opto-electrónicos más comunes utilizados para indicar la activación de una salida, sin embargo, pese a que no son dispositivos optimizados para la detección de luz, son muy efectivos como fotodiodo si los configuramos adecuadamente, por lo que pueden utilizarse como elementos de entrada en un sistema microprogramable.
 
-
+Bajo condiciones de polarización inversa, un diodo LED se modela como un capacitor en paralelo con una fuente de corriente cuyo valor es proporcional a la luz incidente en el LED.
 
 
 
