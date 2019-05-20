@@ -37,4 +37,4 @@ El enlace desde donde podemos cargar el programa de aplicacion en la placa micro
 ## VIDEO DEMO
 En esta demostración podemos observar como al mover la mano sobre los diodos LED limitamos la cantidad de luz ambiente que indide sobre ellos. A su vez, el parpadeo de los LEDs solo el visible en el video, y no en la realidad, lo que demuestra que los pines se reconfiguran como entrada o salida de forma continuada, lo que permite medir la cantidad de luz incidente.
 
-![](programaBloque.png)
+![](demo.gif)
