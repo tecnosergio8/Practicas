@@ -19,6 +19,8 @@ Bajo condiciones de polarización inversa, un diodo LED se modela como un capaci
 
 Cuando el pin de Entrada/Salida, donde hemos conectado el LED, se reconfigura para que funcione como entrada, el capacitor se dercargará a una velocidad aproximadamente proporcional a la cantidad de luz incidente. Al medir el tiempo que tarda este proceso podemos determinar la cantidad de luz ambiente.
 
+![](secuenciaLedFoto.png)
+
 ## Materiales
 
 - 1 Módulo micro:bit
