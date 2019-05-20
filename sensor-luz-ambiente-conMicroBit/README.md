@@ -30,4 +30,4 @@ Cuando el pin de Entrada/Salida, donde hemos conectado el LED, se reconfigura pa
 
 Este programa muestra el nivel de luz con un gráfico de barras en la pantalla LED de la micro:bit. Si mueves la placa a diferentes lugares con diferentes niveles de luz, el gráfico de barras cambiará.
 
-![](mblock.png)
+![](programaBloque.png)
