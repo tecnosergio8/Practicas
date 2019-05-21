@@ -32,7 +32,6 @@ I = 20mA
 Fórmulas
 ```
 
-![](fritzing.png)
 
 ## Programación
 
