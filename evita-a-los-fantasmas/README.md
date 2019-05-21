@@ -1,12 +1,3 @@
----
-title: Evita a los fantasmas
-description: Videojuego de cazafantasmas que se mueve mediante Joystick.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Celia Martínez Soto, github: }
----
-
 # Evita a los fantasmas
 
 El juego consiste en una chica cazafantasmas que se mueve con un Joystick, por lo que se une su movimiento al del Joystick. Cuando la chica caza el fantasma este desaparece y un diodo se enciende y vuelve a apagar, sale un clon del fantasma cada segundo.

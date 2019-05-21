@@ -1,12 +1,3 @@
----
-title: Sensor baja toldo
-description: Construcción de un sensor para bajar el toldo de una estancia.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: María Soledad Banegas Carrillo, github: }
----
-
 # Sensor baja toldo
 
 Construcción de un sensor para bajar el toldo de una estancia.

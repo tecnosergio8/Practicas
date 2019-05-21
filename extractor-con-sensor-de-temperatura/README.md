@@ -1,13 +1,3 @@
----
-title: Extractor con sensor de temperatura
-description: Sistema para refrigerar estancias cuando superan una determinada temperatura.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Gerónimo Carbonell Capel, github: }
-  - { name: Pascual Banegas Gil, github: }
----
-
 # Extractor con sensor de temperatura
 
 Sistema para refrigerar estancias cuando superan una determinada temperatura. A mayor temperatura de la programada se acciona el mecanismo formado por un motor y hélice refrigerando la estancia y para menores temperaturas se detiene el ventilador. También incluye un led para indicar temperaturas bajas.

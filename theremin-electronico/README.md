@@ -1,12 +1,3 @@
----
-title: Theremin electrónico
-description: Obtener diferentes notas musicales dependiendo de la distancia a la que esté el objeto.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: María Isabel Hernández Monllor, github: }
----
-
 # Theremin electrónico
 
 Con esta práctica queremos obtener diferentes notas musicales dependiendo de la distancia a la que esté el objeto, si el objeto se mueve notaremos como van cambiando las notas, y si el movimiento es el correcto podremos conseguir alguna melodía conocida, puede ser un proyecto desarrollado junto con el departamento de música.

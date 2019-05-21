@@ -1,12 +1,3 @@
----
-title: ¡Hola Mundo!
-description: Primer programa o sketch que hace parpadear el led integrado que lleva la placa Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # ¡Hola Mundo!
 
 En este práctica se va a programar el código encargado de encender y apagar el led situado junto el pin número 13 de nuestra placa de Arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
@@ -33,7 +24,7 @@ Para realizar la práctica utilizando mBlock, deberás haber configurado y carga
 
 Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13 (el cual tiene contiene un led en la placa). Fíjate además que estamos indicando a Arduino que el pin digital 13 tiene que tratarlo como salida.
 
-```c++
+```arduino
 /**
  * Hola Mundo
  */

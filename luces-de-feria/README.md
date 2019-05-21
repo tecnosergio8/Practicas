@@ -1,12 +1,3 @@
----
-title: Luces de feria
-description: Efectos de encendido de nueve LEDs utilizando las salidas Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Alfredo Velázquez Marín, github:  }
----
-
 # Luces de feria
 
 En esta práctica se hacen varios efectos de encendido de nueve LEDs. Utilizando pines digitales de la placa de Arduino.
@@ -30,7 +21,7 @@ Cuando conectamos un componente electrónico a una placa de Arduino, se ejerce s
 ## Programación en Arduino
 
 
-```
+```arduino
 /**
  * Luces de feria
  */

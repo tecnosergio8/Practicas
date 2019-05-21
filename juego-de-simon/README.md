@@ -1,16 +1,3 @@
----
-title: Juego de Simón
-description: Se pretende implementar una versión del juego Simón, realizado con un Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Ana María García Caparrós, github: }
-  - { name: Guillermo José Gómez Espuny, github: }
-  - { name: David Pérez Díaz, github: }
-  - { name: Gheorghe Sofletea Motoc, github: }
----
-
-
 # Juego de Simón
 
 Se pretende implementar una versión del juego Simón, realizado con un Arduino Uno y empleando programación en mBlock. A la vez que la secuencia de luces a repetir se presenta en pantalla, en la placa protoboard se encenderán los leds correspondientes acompañado de un sonido. El jugador introducirá la secuencia solicitada mediante pulsadores ubicados en la protoboard.

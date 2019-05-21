@@ -1,13 +1,3 @@
----
-title: Semáforo con pulsador
-description: Cruce de semáforos de vehículos y de peatones.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Carlota Gómez de Slazar Cateriu, github: }
-  - { name: Pablo González Fernández, github: }
----
-
 # Semáforo con pulsador
 
 El proyecto consiste en un cruce de semáforos, uno de vehículos y otro de peatones. El semáforo de vehículos está normalmente verde (y el de peatones rojo), hasta que algún peatón pulsa el pulsador. Entonces, el naranja de los vehículos parpadea durante un tiempo prudencial y pasa a rojo. En ese momento el semáforo de peatones pasa a verde. Tras unos segundos el verde de los peatones parpadea y pasa a rojo. En ese momento el de los vehículos pasa a verde.

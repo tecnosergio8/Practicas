@@ -1,12 +1,3 @@
----
-title: Registro de Nivel de iluminación LDR y Humedad en Archivo CSV
-description: Envio de datos de sensor LDR y humedad conectados a las entradas analógicas de Arduino y enviados a la Raspberry a traves de Pyserial y guardado en un archivo csv
-tags: Arduino, Raspberry, csv, pyserial
-level: Facil, Medio, Avanzado
-authors:
-  - { name: Cristóbal Javier Solano Navarro, github: CJsolanonavarro }
----
-
 # Registro de Nivel de iluminación LDR y Humedad en Archivo CSV
 
 Envio de datos de sensor LDR y humedad conectados a las entradas analógicas de Arduino y enviados a la Raspberry a traves de Pyserial y guardado en un archivo csv
@@ -31,7 +22,6 @@ I = 20mA
 
 Fórmulas
 ```
-
 
 ## Programación
 

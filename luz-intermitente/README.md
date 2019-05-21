@@ -1,12 +1,3 @@
----
-title: Luz intermitente
-description: Parpadeo intermitente de un led con frecuencia de 1 segundo en la placa Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Luz intermitente
 
 El objetivo de esta práctica es programar un LED que parpadeé de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un LED (haciendo uso de la salida digital).
@@ -32,14 +23,14 @@ El objetivo de esta práctica es programar un LED que parpadeé de forma intermi
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
@@ -57,7 +48,7 @@ En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta co
 
 Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13 un valor alto (HIGH), esperar 1 segundo (1000 milisegundos), establecerse un valor bajo (LOW) y volver a esperar. Este procedimiento se realiza en la función loop() ya que se repite indefinidamente.
 
-```
+```arduino
 /**
  * Luz intermitente
  */

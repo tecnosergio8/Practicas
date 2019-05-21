@@ -1,12 +1,3 @@
----
-title: Detector de aparcamiento con ultrasonidos
-description: Práctica para detectar objetos utilizando el sensor de ultrasonidos.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Detector de aparcamiento con ultrasonidos
 
 El objetivo de esta práctica es medir la distancia entre objetos simulando el detector de aparcamiento con zumbador existente en algunos vehículos. Para ello se va a utilizar un sensor de ultrasonidos.
@@ -52,7 +43,7 @@ En primer lugar, se configura el pin digitales 13 y 12 en modo salida (OUTPUT) y
 
 Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
-```
+```arduino
 /**
  * Detector de aparcamiento
  */

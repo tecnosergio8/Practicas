@@ -1,12 +1,3 @@
----
-title: Sensor de luz ambiente con micro:bit
-description: Medir y representar con micro:bit la cantidad de luz ambiente usando la pantalla LED matricial.
-tags: micro:bit, sensor luz, medir luz
-level: Facil
-authors:
-  - { name: Javier Solana Campoy, github: jviHub }
----
-
 # Sensor de luz ambiente con micro:bit
 
 ![](preview.gif)

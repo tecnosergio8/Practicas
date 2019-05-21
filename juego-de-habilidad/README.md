@@ -1,12 +1,3 @@
----
-title: Juego de habilidad
-description: Avanzando en la programación. Uso de procedimientos y funciones. Práctica con los acelerómetros en la placa Micro:bit.
-tags: Micro:bit, microbit, juego, pelotita, pelota, acelerometro, habilidad
-level: Medio, Avanzado
-authors:
-  - { name: Rafael Rubio Baeza, github: rafael-rubio }
----
-
 # Juego de habilidad
 
 ![](habilidad_reto.gif) 
@@ -15,13 +6,11 @@ Basándome en una simple idea surgida cuando estaba descubriendo las posibilidad
 
 Así surge esta idea. Es un juego en el que utilizando los acelerómetros que posee esta placa, los chavales pueden probar sus habilidades. El juego es solo una excusa, ya que lo que estamos en el fondo persiguiendo es desarrollar sus hablidades en programación. Aparte de las disciplinas básicas, hay algún problema matemático que se ha resuelto en la implementación del programa que será utilizado como ejercicio de profundización.
 
-
 ## Materiales
 
 - 1 Raspberry Pi
 - 1 Cable USB - microUSB
 - 1 Micro:bit
-
 
 ## Programación
 
@@ -155,8 +144,6 @@ Este es el punto donde se puede hacer enfasis entre los alumnos para que se den 
 El codigo utilizando funciones y procedimientos queda:
 
 ```python
-  # Programa en python
-  # Escribe tu código aquí :-)
 from microbit import *
 
 posicion=('90000','09000',"00900","00090","00009")
@@ -234,8 +221,6 @@ Quedando el juego así:
 El progrma lo podéis obtener copiando el siguiente código:
   
 ```python
-# Programa en python
-# Escribe tu código aquí :-)
 from microbit import *
 from random import randrange
 

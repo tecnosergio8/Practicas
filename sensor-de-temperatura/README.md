@@ -1,12 +1,3 @@
----
-title: Sensor de temperatura
-description: Práctica para programar el sensor de temperatura LM35.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Sensor de temperatura
 
 El objetivo de esta práctica es encender los LEDs rojo, naranja o azul dependiendo de la temperatura ambiente, siendo el color azul inferior a 10 grados y el color rojo más de 25 grados.
@@ -36,10 +27,10 @@ El sensor de temperatura se conectará a los terminales de 5V y GND siendo la pa
 
 El rango de medición es de -55ºC (-550mV) a 150ºC (1500 mV). Su precisión a temperatura ambiente es de 0,5ºC.
 
-<pre>
+```
 Milivoltios = ( valor analógico / 1023 ) * 5000
 Temperatura = Milivoltios / 10
-</pre>
+```
 
 ![](fritzing.png)
 
@@ -53,7 +44,7 @@ La programación consiste en detectar la temperatura siguiendo la conversión an
 
 La programación consiste en detectar la temperatura siguiendo la conversión anterior y encender uno un otros LEDs dependiendo de la temperatura almacenada en la variable "temperatura"".
 
-```
+```arduino
 /**
  * Sensor de temperatura
  */

@@ -1,13 +1,3 @@
----
-title: Semáforo con micrófono
-description: Construcción de un semaforo para el control del ruido en el aula con un Arduino NANO.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Sergio Lino Ferrández Gil, github: }
-  - { name: Ana Meseguer García, github: }
----
-
 # Semáforo con micrófono
 
 Este proyecto versa sobre un semaforo para el control del ruido en el aula, con el objetivo de concienciar y enseñar al alumnado a controlar el nivel generado, principalmente durante el desarrollo de actividades en las cuales los alumnos deben trabajar en equipo, debatiendo entre ellos, pero conservando un nivel de ruido aceptable en el aula.

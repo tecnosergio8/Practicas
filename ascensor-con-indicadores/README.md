@@ -1,12 +1,3 @@
----
-title: Ascensor con indicadores luminosos
-description: El ascensor consta de tres plantas. Cada planta dispone de una fotorresistencia LDR.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: María Inmaculada Sánchez Conesa, github: }
----
-
 # Ascensor con indicadores luminosos
 
 Se trata de un proyecto realizado por alumnos de 3º de ESO coordinados por la profesora Mª Inmaculada Sánchez Conesa. 

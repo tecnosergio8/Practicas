@@ -1,12 +1,3 @@
----
-title: La Guerra de las Galaxias
-description: Reproducir la BSO de esta película utilizando un zumbador.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # La Guerra de las Galaxias
 
 El objetivo de esta práctica consiste en reproducir con ayuda de un zumbador la banda sonora de La Guerra de las Galaxias mediante frecuencias.
@@ -43,7 +34,7 @@ En primer lugar se crea una lista con las notas y tonos de cada una de las notas
 
 Por otro lado, al ejecutar el código se llama a la función que reproduce la nota dada siguiendo la partitura de la banda sonora de La Guerra de las Galaxias.
 
-```
+```arduino
 /**
  * La Guerra de las Galaxias
  */

@@ -1,12 +1,3 @@
----
-title: Encender un LED mediante pulsador
-description: Encender un LED al pulsar un botón utilizando resistencias en Pull-Down.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Encender un LED mediante pulsador
 
 El objetivo de esta práctica es encender un LED utilizando un simple pulsador, es decir, se va a programar un código encargado de detectar si se pulsa el pulsador (haciendo uso de la entrada digital), en cuyo caso se encenderá el LED (haciendo uso de la salida digital). Para ello se va a construir un circuito utilizando un LED y un pulsador.
@@ -33,14 +24,14 @@ El objetivo de esta práctica es encender un LED utilizando un simple pulsador, 
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el pulsador al pin digital 2 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
@@ -58,7 +49,7 @@ En primer lugar, se configura el pin digitales 13 en modo salida (OUTPUT) y el p
 
 Al ejecutar el código se deberá detectar en todo momento si se ha pulsado el pulsador conectado al pin digital 2, en cuyo caso se establecerá el valor alto al pin digital 13, el cual está conectado al LED.
 
-```
+```arduino
 /**
  * Pulsador simple
  */

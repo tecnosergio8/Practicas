@@ -1,12 +1,3 @@
----
-title: Servomotor con potenciómetro
-description: Movimientos de un servomotor mapeando los ángulos con la posición de un potenciómetro
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Servomotor con potenciómetro
 
 El objetivo de esta práctica es regular el ángulo de un servomotor con ayuda de un potenciómetro, es decir, según se gira el potenciómetro desde su posición de resistencia mínima a resistencia máxima, el servomotor girará entre sus valores de 0º y 180º.
@@ -53,7 +44,7 @@ En primer lugar, se importa la librería a utilizar <Servo.h> y se inicializa el
 
 Por otro lado, al ejecutar el código se calcula el valor analógico del potenciómetro y se almacena en una variable. A continuación se interpola el valor obtenido en la entrada analógica a través del potenciómetro (o-1023) con el valor de salida analógica (0-180) correspondiente a los valores admitidos por el servomotor.
 
-```
+```arduino
 /**
  * Servomotor manual
  */

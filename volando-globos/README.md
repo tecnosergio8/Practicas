@@ -1,12 +1,3 @@
----
-title: Volando globos
-description: Conectando mBlock y arduino para activar salidas digitales.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Juan García Guillamón, github: }
----
-
 # Volando globos
 
 Conectando mBlock y arduino para activar salidas digitales.

@@ -8,7 +8,7 @@ El proyecto consiste en un robot muy sencillo hecho con materiales de reciclaje,
 
 - 1 Arduino
 - 1 Servomotor
-- 1 Clip de 9 v. con conector de alimentación para arduino
+- 1 Clip de 9 v. con conector de alimentación
 - 1 pila de 9 v.
 - 3 Cables de puente macho a macho para arduino
 - 1 Clip grande

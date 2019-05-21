@@ -1,12 +1,3 @@
----
-title: Reciclaje
-description: Desechar cada residuo en el contenedor adecuado utilizando mBlock y Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Josefa García García, github: }
----
-
 # Reciclaje
 
 Consiste en desechar cada residuo en el contenedor adecuado. Si aciertas se encenderá la luz verde y si fallas se encenderá la roja y se oirá un pitido.
@@ -29,4 +20,3 @@ Consiste en desechar cada residuo en el contenedor adecuado. Si aciertas se ence
 ## Programación en mBlock
 
 ![](mblock.png)
-

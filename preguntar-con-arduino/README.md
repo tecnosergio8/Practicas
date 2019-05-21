@@ -1,12 +1,3 @@
----
-title: Preguntar con arduino
-description: Programa de preguntas respuestas utilizando mBlock y Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Ana Isabel Villena Mota, github: }
----
-
 # Preguntar con arduino
 
 Consiste en un ejercicio en donde el alumno desarrolla un programa donde el personaje de mblock le pregunta como se llama y después de dar el alumno su nombre, se le muestra un diodo. Si acierta a la primera se le enciende un diodo verde y se acaba el programa, si no, le pide que escriba el nombre correcto y mientras no lo hace se le enciende un diodo rojo, después de decir la respuesta correcta, se enciende el diodo amarillo y se acaba el programa.

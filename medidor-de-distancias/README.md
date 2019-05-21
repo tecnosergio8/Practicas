@@ -1,12 +1,3 @@
----
-title: Medidor de distancia con ultrasonidos
-description: Práctica para medir distancias utilizando el sensor de ultrasonidos.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Medidor de distancia con ultrasonidos
 
 El objetivo de esta práctica es medir la distancia entre objetos próximos comprendidos entre unos cuantos centímetros. Para ello se va a utilizar un sensor de ultrasonidos.
@@ -46,7 +37,7 @@ Al ejecutar el código se establece el pin digital 13 a un valor alto (HIGH) y b
 
 Para ver los valores de distancias deberás abrir el monitor serial.
 
-```
+```arduino
 /**
  * Medidor de distancia
  */

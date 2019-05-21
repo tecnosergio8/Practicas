@@ -1,12 +1,3 @@
----
-title: Alarma personal
-description: Controla una alarma casera utilizando un interruptor para desactivarla.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Pedro José Fernández Martínez, github: }
----
-
 # Alarma personal
 
 Con esta práctica fabricamos una alarma que el alumno puede utilizar personalmente en su habitación o en una caja de seguridad. Lógicamente tenemos un tiempo para desactivar esta alarma y se supone que lo haremos con un interruptor oculto. La alarma se activará al separar un contacto que se pondría en la puerta a proteger.

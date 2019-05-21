@@ -1,12 +1,3 @@
----
-title: Luces del coche fantástico
-description: Efecto de las luces del coche fantástico utilizando 6 diodos LEDs de color rojo.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Luces del coche fantástico
 
 El objetivo de esta práctica es programar el efecto de las luces del coche fantástico utilizando 6 diodos LEDs de color rojo. Las luces realizarán el efecto de desplazamiento desde la izquierda hasta la derecha y desde la derecha hasta la izquierda nuevamente.
@@ -32,14 +23,14 @@ El objetivo de esta práctica es programar el efecto de las luces del coche fant
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
@@ -57,7 +48,7 @@ Para la programación en Arduino IDE se ha utilizado una array que contiene los 
 
 En la función setup() se inicializa cada pin a modo salida utilizando un bucle. En la función loop() de forma similar se activan y desactivan los diferentes pines dejando un retardo entre luces.
 
-```
+```arduino
 /**
  * Coche fantástico
  */

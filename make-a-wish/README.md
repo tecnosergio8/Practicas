@@ -1,12 +1,3 @@
----
-title: Make a Wish
-description: Soplando en el detector de sonido veremos como las semillas del diente de león salen volando.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Natalia Fernández de la Cruz López, github: }
----
-
 # Make a Wish
 
 Make a wish es un "diente de león" virtual. Soplando en el detector de sonido veremos como las semillas salen volando en la pantalla del ordenador, una luz roja o verde nos indicará si el deseo es concedido o no.

@@ -1,12 +1,3 @@
----
-title: Regulador de luz
-description: Regular la intensidad de 3 LEDs utilizando un potenciómetro.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Regulador de luz
 
 El objetivo de esta práctica es regular la intensidad de 3 LEDs utilizando un potenciómetro, es decir, podemos variar la cantidad de luz que emiten los LEDs girando el potenciómetro desde su posición de resistencia mínima a resistencia máxima.
@@ -40,14 +31,14 @@ El objetivo de esta práctica es regular la intensidad de 3 LEDs utilizando un p
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Por un lado se conectan los LEDs a los pines 9, 6 y 5 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el potenciómetro al pin analógico 0 de la placa de arduino.
 
@@ -65,7 +56,7 @@ En primer lugar, se configuran los pines analógicos 9, 6 y 5 en modo salida (OU
 
 Al ejecutar el código se calcula el valor analógico del potenciómetro y se almacena en una variable. A continuación se interpola utilizando la función map() el valor obtenido en la entrada analógica a través del potenciómetro (o-1023) con el valor de salida analógica (0-255). Todos los LEDs se encenderán con la misma intensidad fijada en la variable.
 
-```
+```arduino
 /**
  * Regulador de luz
  */

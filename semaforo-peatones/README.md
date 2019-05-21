@@ -1,12 +1,3 @@
----
-title: Semáforo de peatones
-description: Práctica que controla los tiempos de un semáforo para peatones.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Semáforo de peatones
 
 El objetivo de esta práctica es construir un semáforo para peatones utilizando dos LEDs y un zumbador, es decir, se va a programar un código encargado de encender una luz roja y una luz verde al mismo tiempo que se emite un zumbido para avisar al peatón que puede cruzar por el paso de peatones.
@@ -38,14 +29,14 @@ El objetivo de esta práctica es construir un semáforo para peatones utilizando
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Se conecta el LED rojo al pin digital 13 y el LED de color verde al pin digital 12 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia. El zumbador se conecta debidamente polarizado al pin digital 11.
 
@@ -63,7 +54,7 @@ En primer lugar, se configuran los pines digitales 11, 12 y 13 en modo salida (O
 
 Por otro lado, en la función principal loop() se programa la activación del pin 13 en valor a alto de manera que espere 5 segundos (5000 milisegundos). Una vez transcurrido el tiempo de espera se desactiva el pin 13 y se recorre un bucle encargado de hacer la programación del paso de peatones. En el interior del bucle puedes observar que se reproducirá el sonido de encendido y apagado 10 veces al estar conectado al pin digital 11.
 
-```
+```arduino
 /**
  * Semáforo de peatones
  */

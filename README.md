@@ -2,8 +2,6 @@
 
 > Repositorio de prácticas de programación y robótica realizadas por docentes.
 
-### 
-
 Todas las prácticas almacenadas en este repositorio estarán visibles desde la página web [elcableamarillo.cc][ECA]
 
 ### Licencia

@@ -1,12 +1,3 @@
----
-title: Sensor de aparcamiento LED
-description: Según se la distancia se va encendiendo una escala de leds de diferentes colores.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: José Martínez García, github: }
----
-
 # Sensor de aparcamiento LED
 
 El montaje presentado tiene por objeto que el alumno interactúe con varios componentes del kit arduino. El sistema consiste en un sensor de ultrasonidos, que está conectado a un placa Arduino. Según se la distancia al obstáculo, se va encendiendo una escala de leds de diferentes colores, así como se hace sonar un zumbador  que cambia su frecuencia.

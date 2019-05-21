@@ -1,12 +1,3 @@
----
-title: Máquina para dibujar
-description: Práctica sobre la construcción de una máquina para hacer dibujos.
-tags: mblock, arduino, secundaria
-level: Medio
-authors:
-  - { name: José Antonio Torrecillas Moya, github: }
----
-
 # Máquina para dibujar
 
 Este trabajo trata sobre la construcción de una máquina para hacer dibujos conjugando los movimientos de un motor paso a paso y un servo motor. Inspirado en el vídeo que se encuentra en esta dirección: https://vimeo.com/80311461
@@ -39,7 +30,7 @@ El servo y el motor paso a paso pueden alimentarse directamente de arduino porqu
 
 Esta práctica no se puede programar en mBlock porque no es capaz de mover el motor paso a paso. Por tanto, la programación se hará solo en Arduino IDE. 
 
-```
+```arduino
 /**
  * Máquina para dibujar
  */

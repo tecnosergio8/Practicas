@@ -1,12 +1,3 @@
----
-title: Semáforo simple
-description: Práctica que controla los tiempos de un semáforo con Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Semáforo simple
 
 El objetivo de esta práctica es construir un semáforo simple, es decir, se va a programar un código encargado de simular un semáforo como el que se puede encontrar en cualquier ciudad.
@@ -32,14 +23,14 @@ El objetivo de esta práctica es construir un semáforo simple, es decir, se va 
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Se conectan los LEDs rojo, amarillo y verde a los pines digitales 13, 12 y 11 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
@@ -57,7 +48,7 @@ En primer lugar, se configuran los pines digitales 11, 12 y 13 en modo salida (O
 
 Al ejecutar el código se deberán establecer los pines digitales a un valor bajo para inicializar así los LEDs. A continuación se procede a activar y desactivar los diferentes pines simulando el funcionamiento del semáforo.
 
-```
+```arduino
 /**
  * Semáforo simple
  */

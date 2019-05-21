@@ -1,15 +1,3 @@
----
-title: Barrera accionada por pulsador
-description: Barrera de aparcamiento accionada por pulsador y con luz de semáforo.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Antonio Martínez Hernández, github: }
-  - { name: Heriberto Martínez Martínez, github: }
-  - { name: Ana Belén Ayala García, github: }
-  - { name: Mariano Noguera López, github: }
----
-
 # Barrera accionada por pulsador
 
 Se ha construido una maqueta de una barrera levadiza accionada con pulsador (control de acceso, por ejemplo de vehículos); si se acciona éste, la barrera se eleva y deja pasar el vehículo, indicando con una luz verde que la barrera está abierta, y al dejar de pulsar la barrera baja quedando una luz roja indicando que está cerrada.

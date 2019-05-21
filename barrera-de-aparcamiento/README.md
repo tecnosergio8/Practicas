@@ -1,12 +1,3 @@
----
-title: Barrera de aparcamiento
-description: Barrera de aparcamiento mediante sensor de ultrasonidos.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Alfredo Velázquez Marín, github: }
----
-
 # Barrera de aparcamiento
 
 La práctica consiste en una barrera de aparcamiento, que sube cuando un detector de ultrasonidos detecta un objeto a menos de una distancia prefijada. La barrera es accionada por un servomotor y además se visualiza en pantalla el mismo movimiento que el del montaje. En la pantalla de mblock también se visualiza la distancia medida por el detector de ultrasonidos.

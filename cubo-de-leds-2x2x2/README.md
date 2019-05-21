@@ -1,12 +1,3 @@
----
-title: Cubo de LEDs 2x2x2
-description: Cubo de 8 LEDs utilizando transistores para simular diferentes efectos de luces.
-tags: mblock, arduino, secundaria
-level: Avanzado
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Cubo de LEDs 2x2x2
 
 El objetivo de esta práctica es crear un cubo de LEDs de 2x2x2 utilizando 8 LEDs para simular diferentes efectos de luces con forma de ruleta.
@@ -53,7 +44,7 @@ El primer paso será inicializar los pines a utilizar en nuestra placa de Arduin
 
 A continuación programaremos el bucle principal de la programación encargado de establecer los valores las funciones que veremos a continuación, para realizar diferentes formas o figuras. En este caso se han creado las funciones ciclo() y parpadeo(). Observa como se le pasa por parámetro 2 valores, correspondientes al nivel del cubo de LEDs, es decir, la primera llamada a la función ciclo(1, 0), indica que solamente encenderá los LEDs de la posición activada con el valor lógico 1, los LEDs rojos en este caso.
 
-```
+```arduino
 /**
  * Cubo de LEDs 2x2x2
  */

@@ -1,12 +1,3 @@
----
-title: Datos de Arduino a Raspberry Pi
-description: Paso de los datos del monitor de Arduino a través de Raspberry pi para monitorizarlo desde el ordenador.
-tags: Arduino
-level: MEdio
-authors:
-  - { name: Laura Odette Carrión, github: lauracarfe }
----
-
 # Datos de Arduino a Raspberry Pi
 
 Paso de los datos del monitor de Arduino a través de Raspberry pi para monitorizarlo desde el ordenador
@@ -43,7 +34,7 @@ El led  que pondremos adicionalmente se conecta en el pin 13 (no olvides que el 
 
 En este programa se ha puesto que en un rango de 15 cm el led se enciende y detecta la distancia que se lee pinchando en la lupa de la esquina derecha arriba en el programa de Arduino.
 
-<pre>
+```
 La fórmula que se utiliza para obtener la distancia en el programa es:
 
 Velocidad = Distancia/ Tiempo      
@@ -61,7 +52,7 @@ La constante de la velocidad del sonido es 1/29.
 En el programa Distancia se llama distance y tiempo se llama duration
 
 Distancia= (Tiempo/2)/29 por lo que queda distance=(duration/2)/29
-</pre>
+```
 
 ## Programación
 

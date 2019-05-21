@@ -1,12 +1,3 @@
----
-title: Luces aleatorias
-description: Enciende diferentes intensidades utilizando las salidas PWM de Arduino UNO.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Miguel Ángel Abellán, github: migueabellan }
----
-
 # Luces aleatorias
 
 El objetivo de esta práctica es encender en diferentes intensidades 3 LEDs blancos, es decir, se va a programar un código encargado de encender cada LED blanco a una intensidad de luz diferente (haciendo uso de la salida analógica).
@@ -32,14 +23,14 @@ El objetivo de esta práctica es encender en diferentes intensidades 3 LEDs blan
 
 **Cálculo de la resistencia para el LED**
 
-<pre>
+```
 V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
-</pre>
+```
 
 Se conectan los LEDs a los pines analógicos PWM (~) 9, 6 y 5. La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
@@ -57,7 +48,7 @@ En primer lugar, se configura los pines analógicos PWM 9, 6 y 5 en modo salida 
 
 Por otro lado, al ejecutar el código se establecerá un valor aleatorio entre 0 y 255 en cada uno de los pines analógicos PWM y esperaremos medio segundo (500 milisegundos) para visualizar el efecto aleatorio.
 
-```
+```arduino
 /**
  * Luces aleatorias
  */
