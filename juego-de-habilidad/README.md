@@ -58,13 +58,14 @@ while True:
             display.show(Image("00000:00000:"+posicion[bola_x] + ":00000:00000"))
             sleep(500)
 ```
+
 El juego quedaría así:
 
 ![](habilidad_lineal.gif)
 
 El siguiente paso parece evidente, extenderlo a todos los leds y trabajar en dos dimensiones, aquí surgen al gunos pequeños problemas que hay que resolver pero con un poco de esfuerzo nada es imposible.
 
-```
+```python
 # Programa en python
 from microbit import *
 posicion=('50000','05000',"00500","00050","00005")
@@ -75,7 +76,6 @@ bola_y=2
 
 sensibilidad = 20 # Disminuir el número para aumentar la sensibilidad
 dificultad = 200 # Poner un número más pequeño para aumentar la dificultad del juego
-
 
 while True:
     read_x = accelerometer.get_x()
@@ -114,8 +114,6 @@ while True:
             display.show(Image(cadena))
             sleep(dificultad)
 
-
-
     if read_x > sensibilidad:
         if bola_x ==4:
             display.show(Image.SAD)
@@ -132,6 +130,7 @@ while True:
             cadena = cadena[:29]
             display.show(Image(cadena))
             sleep(dificultad)
+
     if read_x < -1*sensibilidad:
         if bola_x ==0:
             display.show(Image.SAD)
@@ -148,27 +147,22 @@ while True:
             cadena = cadena[:29]
             display.show(Image(cadena))
             sleep(dificultad)
-
 ```
 
 ![](habilidad_plano.gif)
 
 Este es el punto donde se puede hacer enfasis entre los alumnos para que se den cuenta que el programa tiene trozos que se repiten en varias partes del código, justo lo que necesitamos para reforzar la idea de _procedimiento_ y de _función_.
 El codigo utilizando funciones y procedimientos queda:
-  ```
+
+```python
   # Programa en python
   # Escribe tu código aquí :-)
 from microbit import *
 
-
-
 posicion=('90000','09000',"00900","00090","00009")
-
-
 
 sensibilidad = 20 # Sensibilidad del juego
 dificultad = 200
-
 
 def mostrar(x,y): # Presenta en el display la bolita
     cadena=''
@@ -181,15 +175,11 @@ def mostrar(x,y): # Presenta en el display la bolita
     display.show(Image(cadena))
     sleep(dificultad)
 
-
 def fuera():  # El jugador ha fallado
     display.show(Image.SAD)
     sleep(1000)
 
-
 # Principio del programa
-
-
 
 # Posiciones iniciales de la pelotita
 bola_x=2
@@ -231,33 +221,28 @@ while True:
             bola_x -= 1
             mostrar(bola_x,bola_y)
   
-  ```
+```
+
+Se ha utilizado una __función__: mostrar(x,y) y un __procedimiento__: fuera(), lo que hace q  ue el programa sea más sencillo de interpretar y de entender.
   
-  Se ha utilizado una __función__: mostrar(x,y) y un __procedimiento__: fuera(), lo que hace q  ue el programa sea más sencillo de interpretar y de entender.
-  
-  Llegamos así a la versión final, me pareció que sería un juego más motivador si le incorporaba un reto. Definir al comienzo del juego una puerta de salida entre los 16 leds que forman el exterior. Si logramos salir por esa _puerta de escape_ se mostrará una cara sonriente y si nos salimos por otra, la clásica cara triste.
+Llegamos así a la versión final, me pareció que sería un juego más motivador si le incorporaba un reto. Definir al comienzo del juego una puerta de salida entre los 16 leds que forman el exterior. Si logramos salir por esa _puerta de escape_ se mostrará una cara sonriente y si nos salimos por otra, la clásica cara triste.
 
 Quedando el juego así:
 
 ![](habilidad_reto.gif)  
   
-  
 El progrma lo podéis obtener copiando el siguiente código:
   
-  ```
-  # Programa en python
-  # Escribe tu código aquí :-)
+```python
+# Programa en python
+# Escribe tu código aquí :-)
 from microbit import *
 from random import randrange
 
-
 posicion=('90000','09000',"00900","00090","00009")
-
-
 
 sensibilidad = 20 # Sensibilidad del juego
 dificultad = 200
-
 
 def mostrar(x,y): # Presenta en el display la bolita
     cadena=''
@@ -269,7 +254,6 @@ def mostrar(x,y): # Presenta en el display la bolita
         cadena = cadena[:29]
     display.show(Image(cadena))
     sleep(dificultad)
-
 
 def fuera(out_x,out_y,x,y):  # El jugador ha fallado
 
@@ -343,10 +327,11 @@ while True:
         else:
             bola_x -= 1
             mostrar(bola_x,bola_y)
-  ```
+```
+
 En este programa merece la pena estudiar la función __empezar()__ y como se consigue tras obtener un número aleatorio entre 0 y 15 asignarle un led de escape, sería interesante repasar las operaciones: divisiones enteras (//) y los restos de una división (%).
 
-```
+```python
 if salida < 5:
         out_x = salida
         out_y = 0
