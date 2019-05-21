@@ -9,6 +9,8 @@ authors:
 
 # Sensor de luz ambiente con micro:bit
 
+![](preview.gif)
+
 Aunque la placa BBC micro:bit no tiene instalado un dispositivo especial como sensor de luz, podemos usar los diodos LED integrados para estimar la cantidad de luz.
 
 Los LEDs son unos de los componentes opto-electrónicos más comunes utilizados para indicar la activación de una salida, sin embargo, pese a que no son dispositivos optimizados para la detección de luz, son muy efectivos como fotodiodo si los configuramos adecuadamente, por lo que pueden utilizarse como elementos de entrada en un sistema microprogramable.
@@ -35,13 +37,9 @@ El enlace desde donde podemos cargar el programa de aplicacion en la placa micro
 ![](programaBloque.png)
 
 ## VIDEO DEMO
+
 En esta demostración podemos observar como al mover la mano sobre los diodos LED limitamos la cantidad de luz ambiente que indide sobre ellos. A su vez, el parpadeo de los LEDs solo el visible en el video, y no en la realidad, lo que demuestra que los pines se reconfiguran como entrada o salida de forma continuada, lo que permite medir la cantidad de luz incidente.
 
-![](demo.gif)
+![](preview.gif)
 
-Este es el enlace para descargar el clip de video original.
-
-https://github.com/jviHub/Practicas/raw/patch-1/sensor-luz-ambiente-conMicroBit/IMG_0327.TRIM.MOV
-
-
-
+Este es el [enlace](video.MOV) para descargar el clip de video original.
