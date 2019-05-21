@@ -1,12 +1,3 @@
----
-title: Coche con mando
-description: Control de mBot con mando indicando el sentido de la marcha en la pantalla.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: Joana Rufete Sáez, github: }
----
-
 # Coche con mando
 
 Control de mBot con mando. Indicación de marcha a delante con carita en la pantalla led y los  RGB traseros en verde.

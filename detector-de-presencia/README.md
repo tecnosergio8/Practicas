@@ -1,15 +1,4 @@
----
-title: Robot detector de alumnos
-description: Robot mBot capaz de detectar alumnos parados o en movimiento.
-tags: mblock, arduino, secundaria
-level: Iniciación
-authors:
-  - { name: María Dolores Simón Fernández, github: }
-  - { name: José Luis Sánchez García, github: }
----
-
-
-# Robot detecta alumnos
+# Robot detector de presencia
 
 El robot, siempre avanzando en línea recta y con la verde encendida, es capaz de detectar objetos, parados o en movimiento, si se encuentran a menos de 60 cm.
 
