@@ -12,17 +12,6 @@ Envio de datos de sensor LDR y humedad conectados a las entradas analógicas de 
 - 1 Arduino
 - 1 Cable
 
-## Esquema eléctrico
-
-Descripción y fórmulas del esquema eléctrico si las hubiese
-
-```
-V = 5V - 2.1V = 2.9V
-I = 20mA
-
-Fórmulas
-```
-
 ## Programación
 
 Descripción interesante sobre la programación
