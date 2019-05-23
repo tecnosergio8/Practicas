@@ -1,6 +1,6 @@
 # Gobierno a distancia de dos cilindros neumáticos con Raspberry Pi
 
-Programación en Python de dos botones para el control del avance y retroceso de dos cilibndros nuemáticos vía wifi.
+Programación en Python de dos botones para el control del avance y retroceso de dos cilindros nuemáticos vía wifi.
 
 ![](preview.gif)
 
