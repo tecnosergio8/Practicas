@@ -8,13 +8,13 @@ Programación en Python de dos botones para el control del avance y retroceso de
 
 - 1 Raspberry Pi
 - 1 módulo de dos relés de 5 V.
-- Cables de conexión Dupont hembra-hembra para conectar los relé a la Raspberry Pi.
+- Cables de conexión Dupont hembra-hembra para conectar los relés a la Raspberry Pi.
 - 2 Cilindros neumáticos de doble efecto.
-- 2 electroválvulas neumáticas 3/2 de 24 V.
+- 2 electroválvulas neumáticas 4/2 de 24 V.
+- Cables de conexión para las electroválvulas.
 - 1 Fuente de alimentación de 24 V para alimentación de las electroválvulas.
 - 1 Compresor neumático con unidad de mantenimiento.
-- Conductos neumáticos para distribución de aire a presión.
-- Cables de conexión para las electroválvulas.
+- Conductos neumáticos para distribución del aire a presión.
 
 ## Programación
 
@@ -30,17 +30,17 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
 # leds
-amarillo = 17
+rojo = 17
 verde = 18
-GPIO.setup(amarillo, GPIO.OUT)
-GPIO.output(amarillo, GPIO.LOW)
+GPIO.setup(rojo, GPIO.OUT)
+GPIO.output(rojo, GPIO.LOW)
 GPIO.setup(verde, GPIO.OUT)
 GPIO.output(verde, GPIO.LOW)
 
 @app.route('/')
 def home():
    templateData = {
-      'amarillo' : GPIO.input(amarillo),
+      'rojo' : GPIO.input(rojo),
       'verde' : GPIO.input(verde),
    }
    return render_template('home.html', **templateData)
@@ -49,7 +49,7 @@ def home():
 def led(led, action):
    GPIO.output(int(led), int(action))
    templateData = {
-      'amarillo' : GPIO.input(amarillo),
+      'rojo' : GPIO.input(rojo),
       'verde' : GPIO.input(verde),
    }
    return render_template('home.html', **templateData)
@@ -81,7 +81,7 @@ if __name__ == '__main__':
          line-height: 3;
          color: #ffffff;
       }
-      .btn.amarillo {
+      .btn.rojo {
          background: #ff0000;
       }
       </style>
@@ -102,17 +102,16 @@ if __name__ == '__main__':
          line-height: 3;
          color: #ffffff;
       }
-      
       .btn1.verde {
          background: #ff0000;
       }
    </style>
 </head>
 <body>
-   {% if amarillo == 0 %}
+   {% if rojo == 0 %}
       <a class="btn" href="/17/1">A</a>
    {% else %}
-      <a class="btn amarillo" href="/17/0">R</a>
+      <a class="btn rojo" href="/17/0">R</a>
    {% endif %}
 
    {% if verde == 0 %}
